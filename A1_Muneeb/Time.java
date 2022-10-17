@@ -31,6 +31,17 @@ public class Time
         this.hour = hour;
         this.minute = minute;
     }
+
+    //Getter Method:
+    public int hour()
+    {
+        return hour;
+    }
+    public int minute()
+    {
+        return minute;
+    }
+    
     //Converting to String:
     public String toString()
     {

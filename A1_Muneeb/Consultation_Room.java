@@ -33,7 +33,27 @@ public class Consultation_Room
         roomno = c_Consultation_Room.roomno;
     }
 
-    //
+    //Setter method
+    public void setConsultR(char block, int floorno, int roomno)
+    {
+        this.block = block;
+        this.floorno = floorno;
+        this.roomno = roomno;
+    }
+
+    //Getter Method
+    public char getBlock()
+    {
+        return block;
+    }
+    public int floorno()
+    {
+        return floorno;
+    }
+    public int roomno()
+    {
+        return roomno;
+    }
 
     //Converting to String
     public String toString()

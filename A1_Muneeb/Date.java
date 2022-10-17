@@ -38,6 +38,19 @@ public class Date
         this.year = year;
     }
 
+    //Getter method:
+    public int getDay()
+    {
+        return day;
+    }
+    public int getMonth()
+    {
+        return month;
+    }
+    public int year()
+    {
+        return year;
+    }
     
     //Converting to String:
     public String toString()

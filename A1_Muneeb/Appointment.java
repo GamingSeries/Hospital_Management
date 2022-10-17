@@ -54,10 +54,31 @@ public class Appointment
     }
 
     //Getter method:
-    public String getAppointment(String patient_id)
+    public String getPatient_id()
     {
         return patient_id;
     }
+    public String getDoctor_id()
+    {
+        return doctor_id;
+    }
+    public String getReason()
+    {
+        return reason;
+    }
+    public Date getDate()
+    {
+        return date;
+    }
+    public Time getTime()
+    {
+        return time;
+    }
+    public Consultation_Room getConsultR()
+    {
+        return consultation_room;
+    }
+    
     //Convert to String 
     public String toString()
     {
