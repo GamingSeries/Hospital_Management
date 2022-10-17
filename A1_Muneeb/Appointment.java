@@ -1,4 +1,4 @@
-public class Appointment
+public class Appointment implements Cloneable
 {
     private String patient_id; //Patient registration number
     private String doctor_id;  //Doctor ID
@@ -75,6 +75,12 @@ public class Appointment
     public String toString()
     {
         return patient_id + " " + doctor_id + " " + reason + "  " + medication;
+    }
+
+    //Object Cloning:
+    public Object clone()throws CloneNotSupportedException
+    {
+        return super.clone();
     }
 
 }

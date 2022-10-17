@@ -56,4 +56,10 @@ public class Date
     {
         return day + "/" + month + "/" + year;
     }
+    
+    //Cloning Object
+    public Object clone()throws CloneNotSupportedException
+    {
+        return super.clone();
+    }
 }

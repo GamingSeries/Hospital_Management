@@ -1,4 +1,4 @@
-public class Consultation_Room 
+public class Consultation_Room implements Cloneable
 {
     private char block;      //A-Z
     private int floorno;     //Floor number(0-5)
@@ -55,6 +55,12 @@ public class Consultation_Room
     public String toString()
     {
         return "Block: "+block + " Floor Number: " + floorno + "Room Number:  " + roomno;
+    }
+    
+    //Cloning Object
+    public Object clone()throws CloneNotSupportedException
+    {
+        return super.clone();
     }
 
 }

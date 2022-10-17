@@ -1,14 +1,10 @@
-public class Time 
+public class Time implements Cloneable
 {
     private int hour;   //hours of the day(0-23)
     private int minute; //minutes within the hour (0-59)
 
     //No Parameterized Constructor:
-    Time()
-    {
-        hour = 13;
-        minute = 40;
-    }
+    Time(){}
 
     //Parameterized Constructor:
     Time(int hour,int minute)
@@ -16,6 +12,7 @@ public class Time
         this.hour = hour;
         this.minute = minute;
     }
+
 
     //Copy Constructor:
     Time(Time c_Time)
@@ -45,4 +42,12 @@ public class Time
     {
         return hour + ":" + minute;
     }
+
+    //Cloning Object
+    public Object clone()throws CloneNotSupportedException
+    {
+        return super.clone();
+    }
+
+
 }

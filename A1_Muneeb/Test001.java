@@ -1,4 +1,5 @@
-public class Test001 {
+public class Test001 
+{
     public static void main(String[] args) {
         Appointment appointment = new Appointment();
         Consultation_Room room = new Consultation_Room();
