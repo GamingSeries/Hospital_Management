@@ -54,14 +54,14 @@ public class Appointment
     }
 
     //Getter method:
-    public void getAppointment()
+    public String getAppointment(String patient_id)
     {
-
+        return patient_id;
     }
     //Convert to String 
     public String toString()
     {
-        return patient_id + " + " + doctor_id + " + " + reason + " + " + medication;
+        return patient_id + " " + doctor_id + " " + reason + "  " + medication;
     }
 
 }
