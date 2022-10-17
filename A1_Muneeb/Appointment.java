@@ -14,11 +14,6 @@ public class Appointment
         doctor_id = "D001";
         reason = "Allergies";
         medication = "Clarinite";
-
-        System.out.println("Patient ID: " + patient_id);
-        System.out.println("Doctor ID: " + doctor_id);
-        System.out.println("reason of admit: " + reason);
-        System.out.println("medication: " + medication);
     }
 
     //Parameterized Constructor:
@@ -34,8 +29,6 @@ public class Appointment
     //Copy Contructor
     Appointment(Appointment c_Appointment)
     {
-        System.out.println("Copy constructor called");
-
         patient_id = c_Appointment.patient_id;
         doctor_id = c_Appointment.doctor_id;
         reason = c_Appointment.reason;
@@ -78,7 +71,6 @@ public class Appointment
     {
         return consultation_room;
     }
-    
     //Convert to String 
     public String toString()
     {

@@ -10,7 +10,6 @@ public class Date
         day = 15;
         month = 9;
         year = 2007;
-        System.out.println("Enquiry Date: " + day + "/" + month + "/" + year);
 
     }
 
@@ -51,10 +50,10 @@ public class Date
     {
         return year;
     }
-    
+
     //Converting to String:
     public String toString()
     {
-        return day + " " + month + " " + year;
+        return day + "/" + month + "/" + year;
     }
 }

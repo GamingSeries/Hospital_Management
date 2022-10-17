@@ -9,11 +9,7 @@ public class Consultation_Room
     {
         block = 'A';
         floorno = 2;
-        roomno = 205;
-
-        System.out.println("Block Name: " + block);
-        System.out.println("Floor Number: " + floorno);
-        System.out.println("Room Number: " + roomno);
+        roomno = 20;
     }
 
     //Parameterized Constructor:
@@ -58,7 +54,7 @@ public class Consultation_Room
     //Converting to String
     public String toString()
     {
-        return block +" "+ floorno + " " + roomno;
+        return "Block: "+block + " Floor Number: " + floorno + "Room Number:  " + roomno;
     }
 
 }

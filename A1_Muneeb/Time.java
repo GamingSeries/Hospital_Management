@@ -8,8 +8,6 @@ public class Time
     {
         hour = 13;
         minute = 40;
-
-        System.out.println("Enquiry Time: " + hour + ":" + minute);
     }
 
     //Parameterized Constructor:
@@ -41,10 +39,10 @@ public class Time
     {
         return minute;
     }
-    
+
     //Converting to String:
     public String toString()
     {
-        return hour + " " + minute;
+        return hour + ":" + minute;
     }
 }
