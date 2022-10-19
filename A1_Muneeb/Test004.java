@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Test004 {
     public static void main(String[] args) {
         ArrayList <Appointment> arr_list = new ArrayList<Appointment>();
@@ -53,5 +56,7 @@ public class Test004 {
         app_list.setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
         app_list.setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
 
+        Collection.sort(arr_list, Sort());
+        
     }
 }

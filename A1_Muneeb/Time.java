@@ -48,6 +48,4 @@ public class Time implements Cloneable
     {
         return super.clone();
     }
-
-
 }

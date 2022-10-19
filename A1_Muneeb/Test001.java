@@ -1,6 +1,7 @@
 public class Test001 
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Appointment appointment = new Appointment();
         Consultation_Room room = new Consultation_Room();
         Date date = new Date();
@@ -17,6 +18,5 @@ public class Test001
         System.out.println("Appointment Date: " + date);
         System.out.println("Appointment Time: " + time);
 
-        
     }
 }

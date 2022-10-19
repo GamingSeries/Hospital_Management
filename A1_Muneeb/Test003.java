@@ -18,7 +18,6 @@ public class Test003 {
         time_2 = new Time(13, 00);
         Time time_3;
         time_3 = new Time(13, 30);
-
         Consultation_Room room_1;
         room_1 = new Consultation_Room('A', 4, 405);
         Consultation_Room room_2;
