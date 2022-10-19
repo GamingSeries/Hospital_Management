@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public class Test003 {
+public class Test004 {
     public static void main(String[] args) {
         ArrayList <Appointment> arr_list = new ArrayList<Appointment>();
         Appointment app_list = new Appointment();
@@ -54,7 +52,6 @@ public class Test003 {
         app_list.setAppointment("P004", "D007", "Cancer", date1_1, time1_1, room1_1);
         app_list.setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
         app_list.setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
-
 
     }
 }
