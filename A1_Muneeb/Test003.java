@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Test003 {
     public static void main(String[] args) {
@@ -50,12 +51,32 @@ public class Test003 {
         Consultation_Room room1_3;
         room1_3 = new Consultation_Room('B', 2, 205);
 
+        Date new_date1;
+        new_date1 = new Date(5,7,2022); 
+        Date new_date2;
+        new_date2 = new Date(7, 7, 2022);
+        Date new_date3;
+        new_date3 = new Date(10, 10,2022);
+
+        Time new_time1;
+        new_time1 = new Time(13,20);
+        Time new_time2;
+        new_time2 = new Time(12,30);
+        Time new_time3;
+        new_time3 = new Time(15,50);
+
+        Consultation_Room new_room1;
+        new_room1 = new Consultation_Room('A', 3, 305);
+        Consultation_Room new_room2;
+        new_room2 = new Consultation_Room('A', 3, 305);
+        Consultation_Room new_room3;
+        new_room3 = new Consultation_Room('A', 3, 305);
+
         app_list.setAppointment("P004", "D007", "Cancer", date1_1, time1_1, room1_1);
         app_list.setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
         app_list.setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
 
-        Appointment[] list = new Appointment[3];
-
-    
+        Appointment[] app_list2 = new Appointment()
+        Collection.sort(app_list);
     }
 }
