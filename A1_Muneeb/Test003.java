@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Test003 {
     public static void main(String[] args) {
@@ -54,6 +55,6 @@ public class Test003 {
         app_list.setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
         app_list.setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
 
-
+        Collection.sort(app_list);?
     }
 }

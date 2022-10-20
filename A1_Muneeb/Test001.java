@@ -17,6 +17,5 @@ public class Test001
         System.out.println("Room Number: " + room);
         System.out.println("Appointment Date: " + date);
         System.out.println("Appointment Time: " + time);
-
     }
 }
