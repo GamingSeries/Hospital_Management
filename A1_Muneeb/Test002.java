@@ -1,12 +1,10 @@
 public class Test002 
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws CloneNotSupportedException
     {
-        Appointment copy_app1 = new Appointment();
-        Appointment copy_app2 = new Appointment();
-        
-        copy_app1 = copy_app2;
-        Date copy_date1 = new Date(13, 4, 2022);
-        
+        Appointment appointment_1 = new Appointment();
+        appointment_1.setAppointment("P10", "D15", "Stomach pain", , null, null);
+        a
+
     }
 }
