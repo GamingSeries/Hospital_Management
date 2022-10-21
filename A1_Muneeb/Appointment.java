@@ -1,5 +1,6 @@
 public class Appointment implements Cloneable
 {
+    private String appointment_id;
     private String patient_id; //Patient registration number
     private String doctor_id;  //Doctor ID
     private String reason;  //Reason of visit
@@ -10,6 +11,7 @@ public class Appointment implements Cloneable
 
     //No Parameterized Constructor:
     Appointment(){
+        appointment_id = "A001";
         patient_id = "P001";
         doctor_id = "D001";
         reason = "Allergies";
@@ -17,8 +19,9 @@ public class Appointment implements Cloneable
     }
 
     //Parameterized Constructor:
-    Appointment(String patient_id, String doctor_id, String reason, String medication, Date date, Time time, Consultation_Room room)
+    Appointment(String appointment_id, String patient_id, String doctor_id, String reason, String medication, Date date, Time time, Consultation_Room room)
     {
+        this.appointment_id = appointment_id;
         this.patient_id = patient_id;
         this.doctor_id = doctor_id;
         this.reason = reason;
@@ -29,6 +32,7 @@ public class Appointment implements Cloneable
     //Copy Contructor
     Appointment(Appointment c_Appointment)
     {
+        appointment_id = c_Appointment.appointment_id;
         patient_id = c_Appointment.patient_id;
         doctor_id = c_Appointment.doctor_id;
         reason = c_Appointment.reason;
@@ -38,6 +42,7 @@ public class Appointment implements Cloneable
     //Setter Method
     public void setAppointment(String patient_id, String doctor_id, String reason, Date date, Time time, Consultation_Room room)
     {
+        this.appointment_id = appointment_id;
         this.patient_id = patient_id;
         this.doctor_id = doctor_id;
         this.reason = reason;
@@ -47,6 +52,10 @@ public class Appointment implements Cloneable
     }
 
     //Getter method:
+    public  String getAppointment_id()
+    {
+        return appointment_id;
+    }
     public String getPatient_id()
     {
         return patient_id;
@@ -74,7 +83,7 @@ public class Appointment implements Cloneable
     //Convert to String 
     public String toString()
     {
-        return patient_id + " " + doctor_id + " " + reason + "  " + medication;
+        return appointment_id+ " " + patient_id + " " + doctor_id + " " + reason + "  " + medication;
     }
 
     //Object Cloning:

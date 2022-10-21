@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.*;
 
 public class Test003 {
     public static void main(String[] args) {
@@ -26,9 +25,7 @@ public class Test003 {
         Consultation_Room room_3;
         room_3 = new Consultation_Room('B', 2, 205);
 
-        app_list.setAppointment("P001", "D001", "FLU", date_1, time_1, room_1);
-        app_list.setAppointment("P002", "d002", "Allergy", date_2, time_2, room_2);
-        app_list.setAppointment("P003", "D003", "Fever", date_3, time_3, room_3);
+        app_list.add(new Appointment(""));
 
         Date date1_1;
         date1_1 = new Date(17, 1,2021);
@@ -72,11 +69,15 @@ public class Test003 {
         Consultation_Room new_room3;
         new_room3 = new Consultation_Room('A', 3, 305);
 
-        app_list.setAppointment("P004", "D007", "Cancer", date1_1, time1_1, room1_1);
-        app_list.setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
-        app_list.setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
+        Appointment[] app_list2 = new Appointment[2];
+        app_list2[0].setAppointment("P004", "D007", "Cancer", date1_1, time1_1, room1_1);
+        app_list2[1].setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
+        app_list2[2].setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
 
-        Appointment[] app_list2 = new Appointment()
         Collection.sort(app_list);
+        Arrays.sort(app_list2);
+
+        System.out.println("Array list sorted by Appointment ID");
+        for (Appointment x:app_list);
     }
 }
