@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Arrays;
 
 public class Test003 {
     public static void main(String[] args) {
@@ -70,9 +71,9 @@ public class Test003 {
         new_room3 = new Consultation_Room('A', 3, 305);
 
         Appointment[] app_list2 = new Appointment[2];
-        app_list2[0].setAppointment("P004", "D007", "Cancer", date1_1, time1_1, room1_1);
-        app_list2[1].setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
-        app_list2[2].setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
+        app_list2[0].setAppointment("P004", "D007", "Cancer", null, date1_1, time1_1, room1_1);
+        app_list2[1].setAppointment("P005", "d008", "FLU", null, date1_2, time1_2, room1_2);
+        app_list2[2].setAppointment("P006", "D009", "Cough", null, date1_3, time1_3, room1_3);
 
         Collection.sort(app_list);
         Arrays.sort(app_list2);
@@ -81,3 +82,4 @@ public class Test003 {
         for (Appointment x:app_list);
     }
 }
+t
