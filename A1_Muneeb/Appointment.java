@@ -31,7 +31,7 @@ public class Appointment implements Cloneable
 
     //Copy Contructor
     Appointment(Appointment c_Appointment)
-    {
+    { 
         appointment_id = c_Appointment.appointment_id;
         patient_id = c_Appointment.patient_id;
         doctor_id = c_Appointment.doctor_id;
@@ -40,7 +40,7 @@ public class Appointment implements Cloneable
     }
 
     //Setter Method
-    public void setAppointment(String patient_id, String doctor_id, String reason, Date date, Time time, Consultation_Room room)
+    public void setAppointment(String appointment_id, String patient_id, String doctor_id, String reason, Date date, Time time, Consultation_Room room)
     {
         this.appointment_id = appointment_id;
         this.patient_id = patient_id;
