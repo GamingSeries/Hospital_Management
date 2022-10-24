@@ -8,7 +8,7 @@ public class Test001
         Time time = new Time();
         
         
-        appointment_1.setAppointment("P01", "DO1", "Allergies", null, date, time, room);
+        appointment_1.setAppointment("A110", "P150", "D015", "Allergies", date, time, room);
         room.setConsultR('B', 2, 205);
         date.setDate(17, 3, 2007);
         time.setTime(15, 30);

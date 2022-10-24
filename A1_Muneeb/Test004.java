@@ -27,9 +27,9 @@ public class Test004 {
         Consultation_Room room_3;
         room_3 = new Consultation_Room('B', 2, 205);
 
-        app_list.setAppointment("P001", "D001", "FLU", date_1, time_1, room_1);
-        app_list.setAppointment("P002", "d002", "Allergy", date_2, time_2, room_2);
-        app_list.setAppointment("P003", "D003", "Fever", date_3, time_3, room_3);
+        app_list.setAppointment("A001", "P001", "FLU", "Asthma", date_1, time_1, room_1);
+        app_list.setAppointment("A002", "P002", "Allergy", "heart disease", date_2, time_2, room_2);
+        app_list.setAppointment("A003", "P003", "Fever", "brain tumor", date_3, time_3, room_3);
 
         Date date1_1;
         date1_1 = new Date(17, 1,2021);
@@ -52,11 +52,10 @@ public class Test004 {
         Consultation_Room room1_3;
         room1_3 = new Consultation_Room('B', 2, 205);
 
-        app_list.setAppointment("P004", "D007", "Cancer", date1_1, time1_1, room1_1);
-        app_list.setAppointment("P005", "d008", "FLU", date1_2, time1_2, room1_2);
-        app_list.setAppointment("P006", "D009", "Cough", date1_3, time1_3, room1_3);
+        app_list.setAppointment("P004", "D007", "Cancer", null, date1_1, time1_1, room1_1);
+        app_list.setAppointment("P005", "d008", "FLU", null, date1_2, time1_2, room1_2);
+        app_list.setAppointment("P006", "D009", "Cough", null, date1_3, time1_3, room1_3);
 
-        Collection.sort(arr_list, Sort());
         
     }
 }

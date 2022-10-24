@@ -7,15 +7,18 @@ public class Appointment implements Cloneable
     private String medication; //Suggested medication
     private Date date;  //Date of appointment
     private Time time;  //time of appointment
-    private Consultation_Room consultation_room; //Consultation room
+    private Consultation_Room room; //Consultation room
 
     //No Parameterized Constructor:
     Appointment(){
-        appointment_id = "A001";
         patient_id = "P001";
         doctor_id = "D001";
         reason = "Allergies";
         medication = "Clarinite";
+        Date date = new Date();
+        Time time = new Time();
+        Consultation_Room room = new Consultation_Room();
+        
     }
 
     //Parameterized Constructor:
@@ -29,16 +32,6 @@ public class Appointment implements Cloneable
         
     }
 
-    //Copy Contructor
-    Appointment(Appointment c_Appointment)
-    { 
-        appointment_id = c_Appointment.appointment_id;
-        patient_id = c_Appointment.patient_id;
-        doctor_id = c_Appointment.doctor_id;
-        reason = c_Appointment.reason;
-        medication = c_Appointment.medication;
-    }
-
     //Setter Method
     public void setAppointment(String appointment_id, String patient_id, String doctor_id, String reason, Date date, Time time, Consultation_Room room)
     {
@@ -48,14 +41,10 @@ public class Appointment implements Cloneable
         this.reason = reason;
         this.date = date;
         this.time = time;
-        this.consultation_room = room;
+        this.room = room;
     }
 
     //Getter method:
-    public  String getAppointment_id()
-    {
-        return appointment_id;
-    }
     public String getPatient_id()
     {
         return patient_id;
@@ -78,7 +67,7 @@ public class Appointment implements Cloneable
     }
     public Consultation_Room getConsultR()
     {
-        return consultation_room;
+        return room;
     }
     //Convert to String 
     public String toString()
@@ -86,10 +75,26 @@ public class Appointment implements Cloneable
         return appointment_id+ " " + patient_id + " " + doctor_id + " " + reason + "  " + medication;
     }
 
+    //Copy Contructor
+    Appointment(Appointment c_Appointment)
+    { 
+        patient_id = c_Appointment.patient_id;
+        doctor_id = c_Appointment.doctor_id;
+        reason = c_Appointment.reason;
+        medication = c_Appointment.medication;
+        
+    }
+
+    //CompareTo method
+
+    public int compareTo(Appointment a)
+    {
+        return this.appointment_id.compareTo(a.appointment_id);
+    }
+
     //Object Cloning:
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
     }
-
 }
