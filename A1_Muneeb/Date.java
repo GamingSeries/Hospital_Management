@@ -51,6 +51,11 @@ public class Date
         return year;
     }
 
+    public String getDate()
+    {
+        return this.day + " " + this.month + " " + this.year;
+    }
+
     //Converting to String:
     public String toString()
     {
@@ -58,7 +63,12 @@ public class Date
     }
 
     //CompareTo Method:
-    public int CompareTo(Consultation_Room a)
+    @Override
+    public int CompareTo(Date a)
+    {
+        return this.getDate().compareTo(a.getDate());
+    }
+
     //Cloning Object
     public Object clone()throws CloneNotSupportedException
     {

@@ -13,7 +13,6 @@ public class Time implements Cloneable
         this.minute = minute;
     }
 
-
     //Copy Constructor:
     Time(Time c_Time)
     {
@@ -37,10 +36,21 @@ public class Time implements Cloneable
         return minute;
     }
 
+    public String getTime()
+    {
+        return this.hour + ":" + this.minute;
+    }
+
     //Converting to String:
     public String toString()
     {
         return hour + ":" + minute;
+    }
+
+    @Override
+    public int compareTo(Time a)
+    {
+        return this.getTime().compareTo(a.getTime());
     }
 
     //Cloning Object

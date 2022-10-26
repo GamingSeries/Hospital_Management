@@ -85,7 +85,7 @@ public class Test003 {
         Collection.sort(arr_list);
         Arrays.sort(app_list2);
 
-        System.out.println("Array list sorted by Appointment ID");
-        for (Appointment x:app_list);
+        //System.out.println("Array list sorted by Appointment ID");
+        //for (Appointment x:app_list);
     }
 }

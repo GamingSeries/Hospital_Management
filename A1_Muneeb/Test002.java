@@ -2,25 +2,25 @@ public class Test002
 {
     public static void main(String[] args) throws CloneNotSupportedException
     {
+        //Cloning Appointment:
         Appointment appointment_1 = new Appointment();
-        Consultation_Room room = new Consultation_Room();
-        Date date = new Date();
-        Time time = new Time();
-        
-        
-        appointment_1.setAppointment("P01", "DO1", "Allergies", null, date, time, room);
-        room.setConsultR('B', 2, 205);
-        date.setDate(17, 3, 2007);
-        time.setTime(15, 30);
-
-
-        System.out.println("Appointment Details: " + appointment_1);
-        System.out.println("Room Number: " + room);
-        System.out.println("Appointment Date: " + date);
-        System.out.println("Appointment Time: " + time);
-
         Appointment appointment_2 = (Appointment) appointment_1.clone();
-        System.out.println("First Object: " + appointment_1);
-        System.out.println("First Object 2: " + appointment_2);
+        System.out.println("Appointment Cloned: " + appointment_2);
+
+        //Cloning Consultation Room:
+        Consultation_Room room_1 = new Consultation_Room();
+        Consultation_Room room_2 = (Consultation_Room) room_1.clone();
+        System.out.println("Consultation Room Cloned: " + room_2);
+
+        //Cloning Date:
+        Date date_1 = new Date();
+        Date date_2 = (Date) date_1.clone();
+        System.out.println("Date Cloned: " + date_2);
+        
+        //Cloning Time
+        Time time_1 = new Time();
+        Time time_2 = (Time) time_1.clone();
+        System.out.println("Time Cloned: " + time_2);
+        
     }
 }

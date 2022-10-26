@@ -1,5 +1,7 @@
-public class Appointment implements Cloneable
+import java.util.Comparator;
+public class Appointment implements Comparable<Appointment>, Cloneable
 {
+    //Creating Atributes
     private String appointment_id;
     private String patient_id; //Patient registration number
     private String doctor_id;  //Doctor ID
@@ -10,15 +12,20 @@ public class Appointment implements Cloneable
     private Consultation_Room room; //Consultation room
 
     //No Parameterized Constructor:
-    Appointment(){
+    Appointment()
+    {
+        appointment_id = "A001";
         patient_id = "P001";
         doctor_id = "D001";
         reason = "Allergies";
         medication = "Clarinite";
         Date date = new Date();
+        date = date;
         Time time = new Time();
+        time = time;
         Consultation_Room room = new Consultation_Room();
-        
+        room = room;
+
     }
 
     //Parameterized Constructor:
@@ -29,7 +36,9 @@ public class Appointment implements Cloneable
         this.doctor_id = doctor_id;
         this.reason = reason;
         this.medication = medication;
-        
+        this.date = date;
+        this.time = time;
+        this.room = room;
     }
 
     //Setter Method
@@ -72,7 +81,7 @@ public class Appointment implements Cloneable
     //Convert to String 
     public String toString()
     {
-        return appointment_id+ " " + patient_id + " " + doctor_id + " " + reason + "  " + medication;
+        return appointment_id + " " + patient_id + " " + doctor_id + " " + reason + "  " + medication;
     }
 
     //Copy Contructor
