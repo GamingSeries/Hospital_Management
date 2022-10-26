@@ -56,7 +56,9 @@ public class Date
     {
         return day + "/" + month + "/" + year;
     }
-    
+
+    //CompareTo Method:
+    public int CompareTo(Consultation_Room a)
     //Cloning Object
     public Object clone()throws CloneNotSupportedException
     {
