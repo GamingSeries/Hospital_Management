@@ -82,7 +82,7 @@ public class Test003 {
         app_list2[1].setAppointment("P005", "d008", "D151", "cough", new_date2, new_time2, new_room2);
         app_list2[2].setAppointment("P006", "D009", "D152", "heart disease", new_date3, new_time3, new_room3);
 
-        Collection.sort(arr_list);
+        Collection.sort(arr_list);        
         Arrays.sort(app_list2);
 
         //System.out.println("Array list sorted by Appointment ID");
