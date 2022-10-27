@@ -19,13 +19,12 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         doctor_id = "D001";
         reason = "Allergies";
         medication = "Clarinite";
-        Date date = new Date();
-        date = date;
-        Time time = new Time();
-        time = time;
-        Consultation_Room room = new Consultation_Room();
-        room = room;
+    }
 
+    public void default_appointment()
+    {
+        System.out.println("\t Default Constructor \t");
+        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " +  patient_id + "\n Doctor ID: " + doctor_id + "\n Reason: " + reason + "\n Medication: " + medication);
     }
 
     //Parameterized Constructor:
@@ -41,6 +40,12 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         this.room = room;
     }
 
+    public void parameterized_appointment()
+    {
+        System.out.println("\t Parameterized Constructor \t");
+        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " + patient_id + "\n Doctor ID: " + doctor_id + " Reason: " + reason + "\n Medications: " + medication);
+    }
+
     //Setter Method
     public void setAppointment(String appointment_id, String patient_id, String doctor_id, String reason, Date date, Time time, Consultation_Room room)
     {
@@ -51,6 +56,17 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         this.date = date;
         this.time = time;
         this.room = room;
+    }
+
+    //Copy Contructor
+    Appointment(Appointment c_Appointment)
+    {
+         
+        patient_id = c_Appointment.patient_id;
+        doctor_id = c_Appointment.doctor_id;
+        reason = c_Appointment.reason;
+        medication = c_Appointment.medication;
+        
     }
 
     //Getter method:
@@ -82,16 +98,6 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     public String toString()
     {
         return appointment_id + " " + patient_id + " " + doctor_id + " " + reason + "  " + medication;
-    }
-
-    //Copy Contructor
-    Appointment(Appointment c_Appointment)
-    { 
-        patient_id = c_Appointment.patient_id;
-        doctor_id = c_Appointment.doctor_id;
-        reason = c_Appointment.reason;
-        medication = c_Appointment.medication;
-        
     }
 
     //CompareTo method
