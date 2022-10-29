@@ -75,5 +75,4 @@ public class Consultation_Room implements Cloneable
     {
         return super.clone();
     }
-
 }
