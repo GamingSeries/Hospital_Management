@@ -83,9 +83,9 @@ public class Date
 
     //CompareTo Method:
     //@Override
-    public int CompareTo(Date a)
+    public int CompareTo(Time time)
     {
-        return this.getDate().compareTo(a.getDate());
+        return this.getDate().compareTo(time.getTime());
     }
 
     //Cloning Object

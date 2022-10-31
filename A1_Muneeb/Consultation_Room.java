@@ -79,7 +79,8 @@ public class Consultation_Room implements Cloneable
     //Converting to String
     public String toString()
     {
-        return "Block: "+block + " Floor Number: " + floorno + "Room Number:  " + roomno;
+        System.out.println("____________________________________________");
+        return "\nBlock: " + block + "\nFloor Number: " + floorno + "\nRoom Number:  " + roomno;
     }
     
     //@Override

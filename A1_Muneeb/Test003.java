@@ -1,5 +1,6 @@
-import java.util.*;
-
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Arrays;
 public class Test003 {
     public static void main(String[] args) {
         ArrayList <Appointment> arr_list = new ArrayList<Appointment>();
@@ -30,7 +31,7 @@ public class Test003 {
         arr_list.add(new Appointment("A107", "P120", "D125", "coughing", "cough syrup", date_2, time_2, room_2));
         arr_list.add(new Appointment("A109", "P111", "D135", "asthma", "inhaler", date_3, time_3, room_3));
 
-        System.out.println(appointment1);
+        //System.out.println(appointment1);
 
         //more dummy data
         /*        
@@ -56,19 +57,14 @@ public class Test003 {
         room1_3 = new Consultation_Room('B', 2, 205);
          */
 
-        Date new_date1;
-        new_date1 = new Date(5,7,2022); 
-        Date new_date2;
-        new_date2 = new Date(7, 7, 2022);
-        Date new_date3;
-        new_date3 = new Date(10, 10,2022);
+        Date new_date1 = new Date(5,7,2022);
+        Date new_date2 = new Date(7, 7, 2022);
+        Date new_date3 = new Date(10, 10,2022);
 
-        Time new_time1;
-        new_time1 = new Time(13,20);
-        Time new_time2;
-        new_time2 = new Time(12,30);
-        Time new_time3;
-        new_time3 = new Time(15,50);
+        
+        Time new_time1 = new Time(13,20);
+        Time new_time2 = new Time(12,30);
+        Time new_time3 = new Time(15,50);
 
         Consultation_Room new_room1;
         new_room1 = new Consultation_Room('A', 3, 305);
@@ -78,14 +74,22 @@ public class Test003 {
         new_room3 = new Consultation_Room('A', 3, 305);
 
         Appointment[] app_list2 = new Appointment[3];
-        app_list2[0].setAppointment("P004", "D007", "D150", "asthma", new_date1, new_time1, new_room1);
-        app_list2[1].setAppointment("P005", "d008", "D151", "cough", new_date2, new_time2, new_room2);
-        app_list2[2].setAppointment("P006", "D009", "D152", "heart disease", new_date3, new_time3, new_room3);
+        app_list2[0] = new Appointment("A004", "P007", "D150", "asthma", "Inhaler", new_date1, new_time1, new_room1);
+        app_list2[1] = new Appointment("A005", "P008", "D151", "cough", "Brufen", new_date2, new_time2, new_room2);
+        app_list2[2] = new Appointment("A006", "P009", "D152", "heart disease", "transplant", new_date3, new_time3, new_room3);
 
-        //Collection.sort(arr_list);        
+        Collections.sort(arr_list);        
         Arrays.sort(app_list2);
 
         //System.out.println("Array list sorted by Appointment ID");
-        //for (Appointment x:app_list);
+		for(Appointment x:app_list2) 
+        {
+			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "+x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
+		}
+
+        for(Appointment y:arr_list)
+        {
+            System.out.println(y.getAppointment_id()+" "+y.getPatient_id()+" "+y.getDoctor_id()+" "+y.getReason()+" "+y.getMedication()+" "+y.getDate()+" "+y.getTime()+" "+y.getConsultR());
+        }
     }
 }
