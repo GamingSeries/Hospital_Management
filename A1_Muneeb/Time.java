@@ -47,13 +47,14 @@ public class Time implements Cloneable
         return hour + ":" + minute;
     }
 
-    @Override
+    //@Override
     public int compareTo(Time a)
     {
         return this.getTime().compareTo(a.getTime());
     }
 
     //Cloning Object
+    @Override
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();

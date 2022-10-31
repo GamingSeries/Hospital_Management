@@ -15,6 +15,12 @@ public class Consultation_Room implements Cloneable
         roomno = 205;
     }
 
+    public void default_room()
+    {
+        System.out.println("\t Default Parameter \t");
+        System.out.println("Block: " + block + "\n Floor No: " + floorno + "\n Room No: " + roomno);
+    }
+
     //Parameterized Constructor:
     Consultation_Room(char block, int floorno, int roomno)
     {
@@ -23,6 +29,11 @@ public class Consultation_Room implements Cloneable
         this.roomno = roomno;
 
     }
+    public void paramterized_room()
+    {
+        System.out.println("\t Parameterized \t");
+        System.out.println("Block: " + block + "\n Floor No: " + floorno + "\n Room No: " + roomno);
+    }
 
     //Setter method
     public void setConsultR(char block, int floorno, int roomno)
@@ -30,6 +41,12 @@ public class Consultation_Room implements Cloneable
         this.block = block;
         this.floorno = floorno;
         this.roomno = roomno;
+    }
+
+    public void setter_room()
+    {
+        System.out.println("\t Default Parameter \t");
+        System.out.println("Block: " + block + "\n Floor No: " + floorno + "\n Room No: " + roomno);
     }
 
     //Getter Method
@@ -65,14 +82,17 @@ public class Consultation_Room implements Cloneable
         return "Block: "+block + " Floor Number: " + floorno + "Room Number:  " + roomno;
     }
     
-    @Override
+    //@Override
     public int CompareTo(Consultation_Room a)
     {
         return this.getRoom().compareTo(a.getRoom());
     }
     //Cloning Object
+    @Override
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
     }
+
+    
 }

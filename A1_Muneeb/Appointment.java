@@ -8,7 +8,7 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     private String reason;  //Reason of visit
     private String medication; //Suggested medication
     private Date date;  //Date of appointment
-    private Time time;  //time of appointment
+    private Time time;  //time of appointment 
     private Consultation_Room room; //Consultation room
 
     //No Parameterized Constructor:
@@ -19,12 +19,19 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         doctor_id = "D001";
         reason = "Allergies";
         medication = "Clarinite";
+        Date d = new Date();
+        Time t = new Time();
+        Consultation_Room r = new Consultation_Room();
+
+        date = d;
+        time = t;
+        room = r;
     }
 
     public void default_appointment()
     {
         System.out.println("\t Default Constructor \t");
-        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " +  patient_id + "\n Doctor ID: " + doctor_id + "\n Reason: " + reason + "\n Medication: " + medication);
+        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " +  patient_id + "\n Doctor ID: " + doctor_id + "\n Reason: " + reason + "\n Medication: " + medication + "\n Date: " + date + "\n Time: " + time + "Consultation Room: " + room);
     }
 
     //Parameterized Constructor:
@@ -43,7 +50,7 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     public void parameterized_appointment()
     {
         System.out.println("\t Parameterized Constructor \t");
-        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " + patient_id + "\n Doctor ID: " + doctor_id + " Reason: " + reason + "\n Medications: " + medication);
+        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " + patient_id + "\n Doctor ID: " + doctor_id + " Reason: " + reason + "\n Medications: " + medication + "\n Date: " + date + "\n Time: " + time + "\nConsultation Room: " + room);
     }
 
     //Setter Method
@@ -58,6 +65,12 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         this.room = room;
     }
 
+    public void setter_appointment()
+    {
+        System.out.println("\t Setter Method \t");
+        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " + patient_id + "\n doctor ID: " + doctor_id + " Reason: " + reason + "\n Medications: " + medication + "\n Date: " + date + "\n Time: " + time + "\nConsultation Room: " + room);
+    }
+
     //Copy Contructor
     Appointment(Appointment c_Appointment)
     {
@@ -69,6 +82,12 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         
     }
 
+    public void copy_appointment()
+    {
+        System.out.println("\t Shallow Copying \t");
+        System.out.println("Appointment ID: " + appointment_id + "\n Patient ID: " + patient_id + "\n doctor ID: " + doctor_id + " Reason: " + reason + "\n Medications: " + medication + "\n Date: " + date + "\n Time: " + time + "\nConsultation Room: " + room);
+    }
+    
     //Getter method:
     public String getPatient_id()
     {
@@ -97,11 +116,12 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     //Convert to String 
     public String toString()
     {
-        return appointment_id + " " + patient_id + " " + doctor_id + " " + reason + "  " + medication;
+        return appointment_id + "\n" + patient_id + "\n" + doctor_id + "\n" + reason + "  \n" + medication + "\n" + date + "\n" + time + "\n" + room;
     }
 
     //CompareTo method
 
+    @Override
     public int compareTo(Appointment a)
     {
         return this.appointment_id.compareTo(a.appointment_id);

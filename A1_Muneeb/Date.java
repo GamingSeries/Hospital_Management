@@ -13,6 +13,12 @@ public class Date
 
     }
 
+    public void default_date()
+    {
+        System.out.println("\t Default Parameter \t");
+        System.out.println("Date: " + day + "/" +  month + "/" + year);
+    }
+
     //Parameterized Constructor:
     Date( int day, int month, int year)
     {
@@ -21,12 +27,11 @@ public class Date
         this.year = year;
 
     }
-    Date(Date c_Date)
-    {
-        day = c_Date.day;
-        month = c_Date.month;
-        year = c_Date.year;
 
+    public void parameterized_date()
+    {
+        System.out.println("\t Parameterized \t");
+        System.out.println("Date: " + day + "/" + month + "/" + year);
     }
 
     //Setter method:
@@ -35,6 +40,12 @@ public class Date
         this.day = day;
         this.month =  month;
         this.year = year;
+    }
+
+    public void setter_date()
+    {
+        System.out.println("\t Setter Method \t");
+        System.out.println("Date: " + day + "/" + month + "/" + year);
     }
 
     //Getter method:
@@ -55,6 +66,14 @@ public class Date
     {
         return this.day + " " + this.month + " " + this.year;
     }
+    
+
+    Date(Date c_Date)
+    {
+        day = c_Date.day;
+        month = c_Date.month;
+        year = c_Date.year;
+    }
 
     //Converting to String:
     public String toString()
@@ -63,13 +82,14 @@ public class Date
     }
 
     //CompareTo Method:
-    @Override
+    //@Override
     public int CompareTo(Date a)
     {
         return this.getDate().compareTo(a.getDate());
     }
 
     //Cloning Object
+    @Override
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
