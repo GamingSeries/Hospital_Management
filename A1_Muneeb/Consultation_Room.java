@@ -81,23 +81,21 @@ public class Consultation_Room implements Comparable <Consultation_Room> ,Clonea
         return "\nBlock: " + block + "\nFloor Number: " + floorno + "\nRoom Number:  " + roomno;
     }
     
-    //@Override
-    public int CompareTo(Consultation_Room a)
-    {
-        return this.getRoom().compareTo(a.getRoom());
-    }
+    
     //Cloning Object
     @Override
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
     }
+   
 
     @Override
     public int compareTo(Consultation_Room o) {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.getRoom().compareTo(o.getRoom());
     }
+
+  
 
     
 }

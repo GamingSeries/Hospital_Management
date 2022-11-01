@@ -1,4 +1,3 @@
-import java.util.Comparator;
 public class Appointment implements Comparable<Appointment>, Cloneable
 {
     //Creating Atributes
@@ -45,6 +44,7 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         this.date = date;
         this.time = time;
         this.room = room;
+        
     }
 
     public void parameterized_appointment()
@@ -111,13 +111,19 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     {
         return medication;
     }
-    public Date getDate()
+    public String getDate()
     {
-        return date;
+       
+        String x;
+        x=date.getDate();
+        return x;
     }
-    public Time getTime()
+    public String getTime()
     {
-        return time;
+      
+        String y;
+        y=time.getTime();
+        return y;
     }
     public Consultation_Room getConsultR()
     {
@@ -129,7 +135,7 @@ public class Appointment implements Comparable<Appointment>, Cloneable
         return "Appointment ID: " + appointment_id + "\nPaitent ID: " + patient_id + "\nDoctor ID: " + doctor_id + "\nReason: " + reason + "  \nMedication: " + medication + "\nDate: " + date + "\nTime: " + time + "\n- - - - - - - - " + " Room " + "- - - - - - - -  " + room;
     }
 
-    //CompareTo method
+
 
     @Override
     public int compareTo(Appointment a)

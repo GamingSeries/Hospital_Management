@@ -87,6 +87,7 @@ public class Test003 {
         {
 			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "+x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
 		}
+        // chalo nice 
 
         System.out.println("_________________________________________________");
         System.out.println("Array List Sorted by Appointment ID");

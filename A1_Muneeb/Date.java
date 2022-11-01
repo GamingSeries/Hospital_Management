@@ -75,6 +75,7 @@ public class Date implements Comparable<Date>, Cloneable
         year = c_Date.year;
     }
 
+    // bhai ab zara run karo test 004 karun run? karo jaani
     //Converting to String:
     public String toString()
     {
@@ -83,15 +84,17 @@ public class Date implements Comparable<Date>, Cloneable
 
     //CompareTo Method:
     //@Override
-    public int CompareTo(Time time)
-    {
-        return this.getDate().compareTo(time.getTime());
-    }
+   
 
     //Cloning Object
     //@Override
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
+    }
+
+    @Override
+    public int compareTo(Date o) {
+        return this.getDate().compareTo(o.getDate());
     }
 }
