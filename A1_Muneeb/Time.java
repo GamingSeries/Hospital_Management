@@ -1,4 +1,6 @@
-public class Time implements Cloneable
+import java.util.Collection;
+
+public class Time implements Comparable <Time>, Cloneable
 {
     private int hour;   //hours of the day(0-23)
     private int minute; //minutes within the hour (0-59)
@@ -54,8 +56,8 @@ public class Time implements Cloneable
     }
 
     //Cloning Object
-    @Override
-    public Object clone()throws CloneNotSupportedException
+    //@Override
+    public Object Clone()throws CloneNotSupportedException
     {
         return super.clone();
     }

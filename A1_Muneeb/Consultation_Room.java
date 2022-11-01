@@ -1,6 +1,4 @@
-import java.util.concurrent.CountDownLatch;
-
-public class Consultation_Room implements Cloneable
+public class Consultation_Room implements Comparable <Consultation_Room> ,Cloneable
 {
     private char block;      //A-Z
     private int floorno;     //Floor number(0-5)
@@ -93,6 +91,12 @@ public class Consultation_Room implements Cloneable
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
+    }
+
+    @Override
+    public int compareTo(Consultation_Room o) {
+        // TODO Auto-generated method stub
+        return 0;
     }
 
     

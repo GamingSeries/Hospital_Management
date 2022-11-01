@@ -75,17 +75,21 @@ public class Test003 {
 
         Appointment[] app_list2 = new Appointment[3];
         app_list2[0] = new Appointment("A004", "P007", "D150", "asthma", "Inhaler", new_date1, new_time1, new_room1);
-        app_list2[1] = new Appointment("A005", "P008", "D151", "cough", "Brufen", new_date2, new_time2, new_room2);
-        app_list2[2] = new Appointment("A006", "P009", "D152", "heart disease", "transplant", new_date3, new_time3, new_room3);
+        app_list2[1] = new Appointment("A009", "P008", "D151", "cough", "Brufen", new_date2, new_time2, new_room2);
+        app_list2[2] = new Appointment("A001", "P009", "D152", "heart disease", "transplant", new_date3, new_time3, new_room3);
 
         Collections.sort(arr_list);        
         Arrays.sort(app_list2);
 
-        //System.out.println("Array list sorted by Appointment ID");
+        System.out.println("_________________________________________________");
+        System.out.println("Array sorted by Appointment ID");
 		for(Appointment x:app_list2) 
         {
 			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "+x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
 		}
+
+        System.out.println("_________________________________________________");
+        System.out.println("Array List Sorted by Appointment ID");
 
         for(Appointment y:arr_list)
         {

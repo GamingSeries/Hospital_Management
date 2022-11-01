@@ -1,4 +1,4 @@
-public class Date 
+public class Date implements Comparable<Date>, Cloneable
 {
     private int day;    //day of the month(1-31)
     private int month;  //month of the year(1-12)
@@ -89,7 +89,7 @@ public class Date
     }
 
     //Cloning Object
-    @Override
+    //@Override
     public Object clone()throws CloneNotSupportedException
     {
         return super.clone();
