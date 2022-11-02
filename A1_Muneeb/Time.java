@@ -6,7 +6,11 @@ public class Time implements Comparable <Time>, Cloneable
     private int minute; //minutes within the hour (0-59)
 
     //No Parameterized Constructor:
-    Time(){}
+    Time()
+    {
+        hour = 15;
+        minute = 30;
+    }
 
     //Parameterized Constructor:
     Time(int hour,int minute)
