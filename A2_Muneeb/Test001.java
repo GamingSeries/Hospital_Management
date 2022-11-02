@@ -1,6 +1,5 @@
 package A2_Muneeb;
 
-import java.sql.Time;
 
 public class Test001 {
     public static void main(String[] args) {
