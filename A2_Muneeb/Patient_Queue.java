@@ -3,7 +3,8 @@ package A2_Muneeb;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Patient_Queue {
+public class Patient_Queue
+{
     private LinkedList <Patient> list_1 = new LinkedList<Patient>();
     Queue<Patient> patient_list1 = new LinkedList<Patient>();
     Queue<Patient> patient_list2 = new LinkedList<Patient>();
@@ -13,7 +14,7 @@ public class Patient_Queue {
         patient_list1.add(p);
     }
 
-    public Consultation()
+    public void Consultation()
     {
         System.out.println("Patient to Remove: " + patient_list1.peek());
         patient_list1.remove();
@@ -28,8 +29,21 @@ public class Patient_Queue {
         }
     }
 
+    public void display()
+    {
+        for (Patient x:patient_list2)
+        {
+            System.out.println(x);
+        }
+    }
+
+    public int size() 
+    {
+        return patient_list2.size();
+    }
+
     public void checkQueue()
     {
-        System.out.println(patient_list1.isEmpty());
+        System.out.println(patient_list2.isEmpty());
     }
 }

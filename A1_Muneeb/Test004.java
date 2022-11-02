@@ -88,5 +88,6 @@ public class Test004 {
 			System.out.println(x2.getAppointment_id()+" "+x2.getPatient_id()+" "+x2.getDoctor_id()+" "+x2.getReason()+" "+x2.getMedication()+" "+x2.getDate()+" "+x2.getTime()+" "+x2.getConsultR());
 			System.out.println();
 		}
+		
     }
 }

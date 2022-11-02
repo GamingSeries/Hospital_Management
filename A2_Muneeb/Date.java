@@ -51,5 +51,24 @@ public class Date implements Comparable<Date>, Cloneable{
         return day + "/" + month + "/" + year;
     }
 
-    Date(Date )
+    Date (Date c)
+    {
+        day = c.day;
+        month = c.month;
+        year = c.year;
+    }
+    
+
+
+    @Override
+    public int compareTo(Date o) 
+    {
+
+        return this.getDate().compareTo(o.getDate());
+    }
+
+    public Object Clone() throws CloneNotSupportedException
+    {
+        return super.clone();
+    }
 }
