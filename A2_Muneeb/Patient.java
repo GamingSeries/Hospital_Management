@@ -27,7 +27,7 @@ public class Patient
         {
             return 0;
         }
-
+        
         else if(priority < p.priority)
         {
             return 1;
@@ -38,5 +38,5 @@ public class Patient
             return -1;
         }
     }
-    
+
 }

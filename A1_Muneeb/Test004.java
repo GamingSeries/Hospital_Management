@@ -80,7 +80,6 @@ public class Test004 {
 			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "+x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
 			System.out.println();
 		}
-		
 
         System.out.println("Array Sorted by date and time");
 		for(Appointment x2:app_list2) {
