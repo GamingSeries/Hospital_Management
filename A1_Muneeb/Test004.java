@@ -10,9 +10,9 @@ public class Test004 {
         
         
         Date date3;
-		date3=new Date(30,10,2022);
+		date3=new Date(21,8,2022);
 		Time time3;
-		time3=new Time(19,50);
+		time3=new Time(9,50);
 		Consultation_Room room3;
 		room3=new Consultation_Room('K',2,280);
 		
@@ -73,12 +73,10 @@ public class Test004 {
         Collections.sort(arr_list,new SortByDateTime());
         Arrays.sort(app_list2, new SortByDateTime());
        
-
+		System.out.println();
         System.out.println("Array List Sorted by date and time");
         for(Appointment x:arr_list) {
-			System.out.println();
 			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "+x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
-			System.out.println();
 		}
 
         System.out.println("Array Sorted by date and time");

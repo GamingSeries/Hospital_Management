@@ -33,18 +33,13 @@ public class Time implements Comparable <Time>, Cloneable
     }
 
     //Getter Method:
-    public int hour()
+    public int getHour()
     {
         return hour;
     }
-    public int minute()
+    public int getMinute()
     {
         return minute;
-    }
-
-    public String getTime()
-    {
-        return this.hour + ":" + this.minute;
     }
 
     //Converting to String:
@@ -56,7 +51,34 @@ public class Time implements Comparable <Time>, Cloneable
     //@Override
     public int compareTo(Time a)
     {
-        return this.getTime().compareTo(a.getTime());
+        if (this.getHour() == a.getHour())
+        {
+            if (this.getMinute() == a.getMinute())
+            {
+                return 0;
+            }
+
+            else if (this.getMinute() > a.getMinute())
+            {
+                return 1;
+            } 
+
+            else
+            {
+                return -1;
+            }
+        }
+
+        else if(this.getHour() > a.getHour())
+        {
+            return 1;
+        }
+
+        else
+        {
+            return -1;
+        }
+
     }
 
     //Cloning Object

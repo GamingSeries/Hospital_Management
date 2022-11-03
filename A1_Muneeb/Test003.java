@@ -1,6 +1,7 @@
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.Arrays;
+
 public class Test003 {
     public static void main(String[] args) {
         ArrayList <Appointment> arr_list = new ArrayList<Appointment>();
@@ -62,7 +63,7 @@ public class Test003 {
         Date new_date3 = new Date(10, 10,2022);
 
         
-        Time new_time1 = new Time(13,20);
+        Time new_time1 = new Time(13,25);
         Time new_time2 = new Time(12,30);
         Time new_time3 = new Time(15,50);
 

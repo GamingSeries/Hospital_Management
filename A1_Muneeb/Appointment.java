@@ -111,19 +111,13 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     {
         return medication;
     }
-    public String getDate()
+    public Date getDate()
     {
-       
-        String x;
-        x=date.getDate();
-        return x;
+        return date;
     }
-    public String getTime()
+    public Time getTime()
     {
-      
-        String y;
-        y=time.getTime();
-        return y;
+      return time;
     }
     public Consultation_Room getConsultR()
     {

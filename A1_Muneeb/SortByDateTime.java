@@ -1,11 +1,15 @@
 import java.util.Comparator;
-
-import java.util.Comparator;
 public class SortByDateTime implements Comparator<Appointment>{
 
-    @Override
     public int compare(Appointment o1, Appointment o2) {
-        return o1.getDate().compareTo(o2.getTime());
+        if(o1.getDate().compareTo(o2.getDate())==0)
+        {
+            return o1.getTime().compareTo(o2.getTime());
+        }
+        else
+        {
+            return o1.getDate().compareTo(o2.getDate());
+        }
     }
     
 }

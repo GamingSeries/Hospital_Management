@@ -58,7 +58,7 @@ public class Date implements Comparable<Date>, Cloneable
     {
         return month;
     }
-    public int year()
+    public int getYear()
     {
         return year;
     }
@@ -95,7 +95,47 @@ public class Date implements Comparable<Date>, Cloneable
     }
 
     @Override
-    public int compareTo(Date o) {
-        return this.getDate().compareTo(o.getDate());
+    public int compareTo(Date a) 
+    {
+        if(this.getYear() == a.getYear())
+        {
+            if (this.getMonth() == a.getMonth())
+            {
+                if (this.getDay() == a.getDay())
+                {
+                    return 0;
+                }
+
+                else if(this.getDay() > a.getDay())
+                {
+                    return 1;
+                }
+
+                else
+                {
+                    return -1;
+                }
+
+            }
+            else if(this.getMonth() > a.getMonth())
+            {
+                return 1;
+            }
+
+            else
+            {
+                return -1;
+            }
+        }
+
+        else if (this.getYear() > a.getYear())
+        {
+            return 1;
+        }
+
+        else
+        {
+            return -1;
+        }
     }
 }
