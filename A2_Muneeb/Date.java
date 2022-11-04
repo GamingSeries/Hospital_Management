@@ -5,6 +5,7 @@ public class Date implements Comparable<Date>, Cloneable{
     private int month;
     private int year;
 
+    //Default Constructor
     Date()
     {
         day = 15;
@@ -12,6 +13,7 @@ public class Date implements Comparable<Date>, Cloneable{
         year = 2020;
     }
 
+    //Parameterized Constructor:
     Date(int day, int month, int year)
     {
         this.day = day;
@@ -19,6 +21,7 @@ public class Date implements Comparable<Date>, Cloneable{
         this.year = year;
     }
 
+    //Setter Method
     public void setDate(int day, int month, int year)
     {
         this.day = day;
@@ -26,6 +29,7 @@ public class Date implements Comparable<Date>, Cloneable{
         this.year = year;
     }
 
+    //Getter Method:
     public int getDay()
     {
         return day;
@@ -51,6 +55,7 @@ public class Date implements Comparable<Date>, Cloneable{
         return day + "/" + month + "/" + year;
     }
 
+    //Copy Method:
     Date (Date c)
     {
         day = c.day;
@@ -59,7 +64,7 @@ public class Date implements Comparable<Date>, Cloneable{
     }
     
 
-
+    //CompareTo Method:
     @Override
     public int compareTo(Date o) 
     {
@@ -67,6 +72,7 @@ public class Date implements Comparable<Date>, Cloneable{
         return this.getDate().compareTo(o.getDate());
     }
 
+    //CLoning Method:
     public Object Clone() throws CloneNotSupportedException
     {
         return super.clone();

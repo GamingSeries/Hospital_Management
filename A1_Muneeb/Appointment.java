@@ -1,3 +1,5 @@
+import Draft_Test.Date;
+
 public class Appointment implements Comparable<Appointment>, Cloneable
 {
     //Creating Atributes

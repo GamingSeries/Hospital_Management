@@ -1,3 +1,6 @@
+import Date;
+
+package Draft_Test;
 public class Date implements Comparable<Date>, Cloneable{
     private int day;
     private int month;

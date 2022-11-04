@@ -48,7 +48,6 @@ public class Time implements Comparable <Time>, Cloneable
         return hour + ":" + minute;
     }
 
-    //@Override
     public int compareTo(Time a)
     {
         if (this.getHour() == a.getHour())

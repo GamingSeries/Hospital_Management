@@ -1,3 +1,5 @@
+import Draft_Test.Date;
+
 public class Date implements Comparable<Date>, Cloneable
 {
     private int day;    //day of the month(1-31)
