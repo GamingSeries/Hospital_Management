@@ -1,5 +1,3 @@
-import Draft_Test.Date;
-
 public class Test002 
 {
     public static void main(String[] args) throws CloneNotSupportedException
@@ -9,7 +7,7 @@ public class Test002
         Consultation_Room room_1 = new Consultation_Room('A', 3, 302);
 
         Appointment app_1 = new Appointment();
-        app_1.setAppointment("A215", "P220", "D214", "Cancer", date_1, time_1, room_1);
+        app_1.setAppointment("A215", "P220", "D214", "Cancer", "Operation", date_1, time_1, room_1);
 
         Appointment app_2 = (Appointment) app_1.clone();
         System.out.println("____________________________________________");

@@ -72,7 +72,7 @@ public class Date implements Comparable<Date>, Cloneable{
         return this.getDate().compareTo(o.getDate());
     }
 
-    //CLoning Method:
+    //CLoning
     public Object Clone() throws CloneNotSupportedException
     {
         return super.clone();

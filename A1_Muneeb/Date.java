@@ -1,5 +1,3 @@
-import Draft_Test.Date;
-
 public class Date implements Comparable<Date>, Cloneable
 {
     private int day;    //day of the month(1-31)
@@ -16,12 +14,6 @@ public class Date implements Comparable<Date>, Cloneable
 
     }
 
-    public void default_date()
-    {
-        System.out.println("\t Default Parameter \t");
-        System.out.println("Date: " + day + "/" +  month + "/" + year);
-    }
-
     //Parameterized Constructor:
     Date( int day, int month, int year)
     {
@@ -31,24 +23,12 @@ public class Date implements Comparable<Date>, Cloneable
 
     }
 
-    public void parameterized_date()
-    {
-        System.out.println("\t Parameterized \t");
-        System.out.println("Date: " + day + "/" + month + "/" + year);
-    }
-
     //Setter method:
     public void setDate(int day, int month, int year)
     {
         this.day = day;
         this.month =  month;
         this.year = year;
-    }
-
-    public void setter_date()
-    {
-        System.out.println("\t Setter Method \t");
-        System.out.println("Date: " + day + "/" + month + "/" + year);
     }
 
     //Getter method:
@@ -78,7 +58,6 @@ public class Date implements Comparable<Date>, Cloneable
         year = c_Date.year;
     }
 
-    // bhai ab zara run karo test 004 karun run? karo jaani
     //Converting to String:
     public String toString()
     {

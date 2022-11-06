@@ -16,10 +16,35 @@ public class Patient
         priority = 5;
     }
 
-    public String toString()
+    Patient(String PatientID, Date date, String problem, int priority)
     {
-        return "Patient ID: " + patient_ID + "\nDate: " + date + "\n Problem: "  + problem + "\n Priority: " + priority;
+        this.patient_ID = PatientID;
+        this.date = date;
+        this.problem = problem;
+        this.priority = priority;
     }
 
+    public String toString()
+    {
+        return "Patient ID: " + patient_ID + "\nDate: " + date + "\nProblem: "  + problem + "\nPriority: " + priority;
+    }
+
+    public int compareTo(Patient p)
+    {
+        if(priority == p.priority)
+        {
+            return 0;
+        }
+
+        else if(priority < p.priority)
+        {
+            return 1;
+        }
+
+        else
+        {
+            return -1;
+        }
+    }
     
 }

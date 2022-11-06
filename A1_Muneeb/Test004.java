@@ -2,15 +2,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-import Draft_Test.Date;
-
 public class Test004 {
     public static void main(String[] args) {
         ArrayList <Appointment> arr_list = new ArrayList<Appointment>();
         Appointment appointment1 = new Appointment();
-
-        
-        
+		
         Date date3;
 		date3=new Date(21,8,2022);
 		Time time3;

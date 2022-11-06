@@ -13,12 +13,6 @@ public class Consultation_Room implements Comparable <Consultation_Room> ,Clonea
         roomno = 205;
     }
 
-    public void default_room()
-    {
-        System.out.println("\t Default Parameter \t");
-        System.out.println("Block: " + block + "\n Floor No: " + floorno + "\n Room No: " + roomno);
-    }
-
     //Parameterized Constructor:
     Consultation_Room(char block, int floorno, int roomno)
     {
@@ -27,11 +21,6 @@ public class Consultation_Room implements Comparable <Consultation_Room> ,Clonea
         this.roomno = roomno;
 
     }
-    public void paramterized_room()
-    {
-        System.out.println("\t Parameterized \t");
-        System.out.println("Block: " + block + "\n Floor No: " + floorno + "\n Room No: " + roomno);
-    }
 
     //Setter method
     public void setConsultR(char block, int floorno, int roomno)
@@ -39,12 +28,6 @@ public class Consultation_Room implements Comparable <Consultation_Room> ,Clonea
         this.block = block;
         this.floorno = floorno;
         this.roomno = roomno;
-    }
-
-    public void setter_room()
-    {
-        System.out.println("\t Default Parameter \t");
-        System.out.println("Block: " + block + "\n Floor No: " + floorno + "\n Room No: " + roomno);
     }
 
     //Getter Method
@@ -94,8 +77,4 @@ public class Consultation_Room implements Comparable <Consultation_Room> ,Clonea
     public int compareTo(Consultation_Room o) {
         return this.getRoom().compareTo(o.getRoom());
     }
-
-  
-
-    
 }
