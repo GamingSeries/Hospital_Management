@@ -2,13 +2,14 @@ package A2_Muneeb;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Patient_Queue
 {
     private LinkedList <Patient> list_1 = new LinkedList<Patient>();
     Queue<Patient> patient_list1 = new LinkedList<Patient>();
-    Queue<Patient> patient_list2 = new LinkedList<Patient>();
+    PriorityQueue<Patient> patient_list2 = new PriorityQueue<Patient>();
 
     public void joinQueue1(Patient p)
     {
@@ -24,7 +25,7 @@ public class Patient_Queue
     {
         System.out.println("Patient to Remove: " + patient_list1.peek());
         patient_list1.remove();
-        System.out.println("Removed Patient: " + patient_list1.peek());
+        System.out.println("Next Patient: " + patient_list1.peek());
     }
 
     public void Consultation2()

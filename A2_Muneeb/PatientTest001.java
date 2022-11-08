@@ -4,10 +4,10 @@ package A2_Muneeb;
 public class PatientTest001 {
     public static void main(String[] args) {
 
-        Date date_1 = new Date(15, 30, 2020);
-        Date date_2 = new Date(15, 30, 2020);
-        Date date_3 = new Date(15, 30, 2020);
-        Date date_4 = new Date(15, 30, 2020);
+        Date date_1 = new Date(15, 3, 2020);
+        Date date_2 = new Date(12, 12, 2020);
+        Date date_3 = new Date(5, 4, 2020);
+        Date date_4 = new Date(1, 5, 2020);
     
         Patient pat_1 = new Patient("P100", date_1, "Cancer", 5);
         Patient pat_2 = new Patient("P101", date_2, "Athma", 3);
@@ -22,6 +22,8 @@ public class PatientTest001 {
         pat_queue.joinQueue1(pat_4);
         
         pat_queue.display1();
+    
+        pat_queue.Consultation1();
 
 
         

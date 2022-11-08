@@ -14,14 +14,14 @@ public class PatientTest002 {
         Patient pat_3 = new Patient("P152", date_3, "OCD", 4);
         Patient pat_4 = new Patient("P153", date_4, "PTSD", 6);
 
-        Patient_Queue pat_queue = new Patient_Queue();
+        Patient_Queue pat_queue2 = new Patient_Queue();
 
-        pat_queue.joinQueue2(pat_1);
-        pat_queue.joinQueue2(pat_2);
-        pat_queue.joinQueue2(pat_3);
-        pat_queue.joinQueue2(pat_4);
+        pat_queue2.joinQueue2(pat_1);
+        pat_queue2.joinQueue2(pat_2);
+        pat_queue2.joinQueue2(pat_3);
+        pat_queue2.joinQueue2(pat_4);
         
-        pat_queue.display2();
+        pat_queue2.display2();
 
     }
 }
