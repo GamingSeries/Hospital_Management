@@ -106,10 +106,10 @@ public class Appointment implements Comparable<Appointment>, Cloneable
     //String Format:
     public String toString()
     {
-        return "Appointment ID: " + appointment_id + "\nPaitent ID: " + patient_id + "\nDoctor ID: " + doctor_id + "\nReason: " + reason + "  \nMedication: " + medication + "\nDate: " + date + "\nTime: " + time + "\n- - - - - - - - " + " Room " + "- - - - - - - -  " + room;
+        return "Appointment ID: " + appointment_id + "\nPaitent ID: " + patient_id + "\nDoctor ID: " + doctor_id 
+        + "\nReason: " + reason + "  \nMedication: " + medication + "\nDate: " + date + "\nTime: " 
+        + time + "\n- - - - - - - - " + " Room " + "- - - - - - - -  " + room;
     }
-
-
 
     @Override
     public int compareTo(Appointment a)

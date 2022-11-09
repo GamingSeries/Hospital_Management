@@ -34,13 +34,7 @@ public class main {
 
         System.out.println(set_app);
 
-        System.out.println("_____________________________________________________________");
-        System.out.println("\t\t Setter Method");
-        System.out.println("_____________________________________________________________");
-        Date date_3 = new Date(13, 30,2022);
-        Time time_3 = new Time(12,30);
-        Consultation_Room room_3 = new Consultation_Room('B', 3,301);
-        Appointment get_app = new Appointment();
+        
 
     }
 

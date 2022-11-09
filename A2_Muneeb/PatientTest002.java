@@ -25,7 +25,5 @@ public class PatientTest002 {
 
         System.out.println("___________________________________________");
         pat_queue.Consultation2();
-        System.out.println("Remaining Patient");
-        pat_queue.display2();
     }
 }

@@ -19,6 +19,7 @@ public class Patient implements Comparable<Patient>{
 
 	@Override
 	public int compareTo(Patient o) {
+	
 		if(priority==o.priority){
 			return 0;
 		}

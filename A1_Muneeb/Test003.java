@@ -86,7 +86,8 @@ public class Test003 {
         System.out.println("Array sorted by Appointment ID");
 		for(Appointment x:app_list2) 
         {
-			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "+x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
+			System.out.println(x.getAppointment_id()+" "+x.getPatient_id()+" "+x.getDoctor_id()+" "+x.getReason()+" "
+            +x.getMedication()+" "+x.getDate()+" "+x.getTime()+" "+x.getConsultR());
 		}
         // chalo nice 
 
@@ -95,7 +96,8 @@ public class Test003 {
 
         for(Appointment y:arr_list)
         {
-            System.out.println(y.getAppointment_id()+" "+y.getPatient_id()+" "+y.getDoctor_id()+" "+y.getReason()+" "+y.getMedication()+" "+y.getDate()+" "+y.getTime()+" "+y.getConsultR());
+            System.out.println(y.getAppointment_id()+" "+y.getPatient_id()+" "+y.getDoctor_id()+" "+y.getReason()+" "
+            +y.getMedication()+" "+y.getDate()+" "+y.getTime()+" "+y.getConsultR());
         }
 
         /*test
