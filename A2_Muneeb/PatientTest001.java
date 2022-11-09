@@ -1,6 +1,5 @@
 package A2_Muneeb;
 
-
 public class PatientTest001 {
     public static void main(String[] args) {
 
@@ -22,10 +21,6 @@ public class PatientTest001 {
         pat_queue.joinQueue1(pat_4);
         
         pat_queue.display1();
-    
         pat_queue.Consultation1();
-
-
-        
     }
 }

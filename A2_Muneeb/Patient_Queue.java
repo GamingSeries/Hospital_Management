@@ -18,7 +18,7 @@ public class Patient_Queue
 
     public void joinQueue2(Patient p)
     {
-        patient_list1.add(p);
+        patient_list2.add(p);
     }
 
     public void Consultation1()
@@ -30,9 +30,9 @@ public class Patient_Queue
 
     public void Consultation2()
     {
-        System.out.println("Patient to Remove: " + patient_list1.peek());
-        patient_list1.remove();
-        System.out.println("Removed Patient: " + patient_list1.peek());
+        System.out.println("Patient to Remove: " + patient_list2.peek());
+        patient_list1.poll();
+        System.out.println("Removed Patient: ");
     }
 
     public void clear1()
