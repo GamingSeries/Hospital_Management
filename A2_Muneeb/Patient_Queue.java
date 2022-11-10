@@ -92,4 +92,9 @@ public class Patient_Queue
         System.out.println(patient_list2.isEmpty());
     }
 
+    public void compare(Patient pat_1, Patient pat_2)
+    {
+        return pat_1.priority - pat_2.priority;
+    }
+
 }
