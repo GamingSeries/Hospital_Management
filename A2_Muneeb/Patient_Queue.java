@@ -32,6 +32,7 @@ public class Patient_Queue
     {
         System.out.println("Patient to Remove: " + patient_list2.peek());
         patient_list2.poll();
+        System.out.println("Remaining Patients: ");
     }
 
     public void clear1()

@@ -20,10 +20,20 @@ public class PatientTest002 {
         pat_queue.joinQueue2(pat_3);
         pat_queue.joinQueue2(pat_4);
 
+        int size1=pat_queue.size2();
+		System.out.println("Size of the before removing element is: " + size1);
+
         System.out.println("___________________________________________");
         pat_queue.display2();
 
         System.out.println("___________________________________________");
         pat_queue.Consultation2();
+        pat_queue.display2();
+        System.out.println("___________________________________________");
+
+        pat_queue.clear2();
+        int size2=pat_queue.size2();
+		System.out.println("Size of the queue after clearing: " + size2);
+        
     }
 }
