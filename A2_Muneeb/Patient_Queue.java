@@ -33,6 +33,11 @@ public class Patient_Queue
         System.out.println("Patient to Remove: " + patient_list2.peek());
         patient_list2.poll();
         System.out.println("Remaining Patients: ");
+
+        while(patient_list2.peek() != null)
+        {
+            System.out.println(patient_list2.poll());
+        }
     }
 
     public void clear1()
@@ -90,11 +95,6 @@ public class Patient_Queue
     public void checkQueue2()
     {
         System.out.println(patient_list2.isEmpty());
-    }
-
-    public void compare(Patient pat_1, Patient pat_2)
-    {
-        return pat_1.priority - pat_2.priority;
     }
 
 }

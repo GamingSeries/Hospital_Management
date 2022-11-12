@@ -105,7 +105,7 @@ public class Test003 {
 
         Appointment test_app1;
         test_app1 = new Appointment("A1", "P1", "D1", "Res1", "Med1", new_date3, new_time3, new_room3);
-
+        
         test_app.getDate().compareTo(test_app1.getDate());
         */
     }
