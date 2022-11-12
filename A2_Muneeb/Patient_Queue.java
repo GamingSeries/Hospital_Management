@@ -1,7 +1,10 @@
 package A2_Muneeb;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -31,13 +34,11 @@ public class Patient_Queue
     public void Consultation2()
     {
         System.out.println("Patient to Remove: " + patient_list2.peek());
+        System.out.println("___________________________________________");
         patient_list2.poll();
+        System.out.println();
         System.out.println("Remaining Patients: ");
-
-        while(patient_list2.peek() != null)
-        {
-            System.out.println(patient_list2.poll());
-        }
+        System.out.println("____________________");
     }
 
     public void clear1()
@@ -69,13 +70,16 @@ public class Patient_Queue
         }
     }
 
-    public void display2()
-    {
-        for (Patient x:patient_list2)
-        {
-            System.out.println(x);
+    public void display2(){
+        PriorityQueue<Patient> pat_copy = new PriorityQueue<Patient>(this.patient_list2);
+        while(pat_copy.size() != 0) { 
+            Patient i = pat_copy.poll();
+            System.out.println(i.getPatientID() + " " + i.getDate() + " " + i.getProblem() + " " + i.getPriority());
         }
-    }
+        if (this.size2() == 0){
+            System.out.println("No patients in the queue");
+        }
+}
 
     public int size1() 
     {

@@ -17,6 +17,22 @@ public class Patient implements Comparable<Patient>{
 		return patientID+" "+date+" "+problem+" "+priority;
 	}
 
+	public String getPatientID() {
+		return patientID;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public String getProblem() {
+		return problem;
+	}
+
+	public int getPriority() {
+		return priority;
+	}
+
 	@Override
 	public int compareTo(Patient o) {
 	
