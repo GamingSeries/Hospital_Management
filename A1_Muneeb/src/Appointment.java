@@ -1,4 +1,5 @@
 package A1_Muneeb;
+
 /**
  * @author Muneeb Farooq
  * @version openJDL 17.0.3
@@ -35,14 +36,14 @@ public class Appointment implements Comparable<Appointment>, Cloneable {
 
     // Parameterized Constructor:
     /**
-     * @param appointment_id 
-     * @param patient_id 
+     * @param appointment_id
+     * @param patient_id
      * @param doctor_id
-     * @param reason 
-     * @param medication 
-     * @param date 
-     * @param time 
-     * @param room 
+     * @param reason
+     * @param medication
+     * @param date
+     * @param time
+     * @param room
      */
     Appointment(String appointment_id, String patient_id, String doctor_id, String reason,
             String medication, Date date, Time time, Consultation_Room room) {
@@ -60,13 +61,13 @@ public class Appointment implements Comparable<Appointment>, Cloneable {
     // Sets a new appointment.
     /**
      * @param appointment_id sets Appointment ID
-     * @param patient_id sets Patient ID
-     * @param doctor_id sets Doctor ID
-     * @param reason sets Reason
-     * @param medication sets Medication
-     * @param date sets Date
-     * @param time sets Time 
-     * @param room sets Room
+     * @param patient_id     sets Patient ID
+     * @param doctor_id      sets Doctor ID
+     * @param reason         sets Reason
+     * @param medication     sets Medication
+     * @param date           sets Date
+     * @param time           sets Time
+     * @param room           sets Room
      */
     public void setAppointment(String appointment_id, String patient_id, String doctor_id, String reason,
             String medication, Date date, Time time, Consultation_Room room) {
@@ -139,7 +140,7 @@ public class Appointment implements Comparable<Appointment>, Cloneable {
     }
 
     /**
-     * @return Time 
+     * @return Time
      */
     public Time getTime() {
         return time;
@@ -163,7 +164,6 @@ public class Appointment implements Comparable<Appointment>, Cloneable {
     public int compareTo(Appointment a) {
         return this.appointment_id.compareTo(a.appointment_id);
     }
-
 
     @Override
     public Object clone() throws CloneNotSupportedException {

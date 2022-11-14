@@ -5,16 +5,14 @@ package A1_Muneeb;
  * @version openJDL 17.0.3
  * @since openJDK 17.0.3
  */
-public class Test002 
-{
+public class Test002 {
     /**
      * @param args
      * @throws CloneNotSupportedException
      */
-    public static void main(String[] args) throws CloneNotSupportedException
-    {
-        Date date_1 = new Date(13,12,2022);
-        Time time_1 = new Time(15, 50) ;
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Date date_1 = new Date(13, 12, 2022);
+        Time time_1 = new Time(15, 50);
         Consultation_Room room_1 = new Consultation_Room('A', 3, 302);
 
         Appointment app_1 = new Appointment();
