@@ -26,9 +26,9 @@ public class Date implements Comparable<Date>, Cloneable{
 
     //Setter Method
     /**
-     * @param day
-     * @param month
-     * @param year
+     * @param day Sets the Date
+     * @param month Sets the Month
+     * @param year Sets the Year
      */
     public void setDate(int day, int month, int year)
     {

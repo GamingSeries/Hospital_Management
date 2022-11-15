@@ -1,6 +1,6 @@
 public class PatientTest002 {
     /**
-     * @param args
+     * @param args passing all the arguments within this class and then displaying the element according to priority order
      */
     public static void main(String[] args) {
 

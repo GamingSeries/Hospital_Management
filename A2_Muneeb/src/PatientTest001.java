@@ -1,6 +1,6 @@
 public class PatientTest001 {
     /**
-     * @param args
+     * @param args passes all the argument within this class and displaying the elements
      */
     public static void main(String[] args) {
 

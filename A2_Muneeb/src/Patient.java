@@ -6,10 +6,10 @@ public class Patient implements Comparable<Patient>{
 	
 	
 	/**
-	 * @param patientID
-	 * @param date
-	 * @param problem
-	 * @param priority
+	 * @param patientID adds PatientID  
+	 * @param date adds date
+	 * @param problem adds problem
+	 * @param priority adds priority
 	 */
 	Patient(String patientID, Date date,String problem,int priority){
 		this.patientID=patientID;
@@ -26,28 +26,28 @@ public class Patient implements Comparable<Patient>{
 	}
 
 	/**
-	 * @return
+	 * @return patientID
 	 */
 	public String getPatientID() {
 		return patientID;
 	}
 
 	/**
-	 * @return
+	 * @return date
 	 */
 	public Date getDate() {
 		return date;
 	}
 
 	/**
-	 * @return
+	 * @return problem
 	 */
 	public String getProblem() {
 		return problem;
 	}
 
 	/**
-	 * @return
+	 * @return priority
 	 */
 	public int getPriority() {
 		return priority;
@@ -69,6 +69,5 @@ public class Patient implements Comparable<Patient>{
 			return -1;
 		}
 	}
-
 	
 }

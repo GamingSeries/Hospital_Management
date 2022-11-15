@@ -1,4 +1,4 @@
-package A1_Muneeb;
+import org.junit.Test;
 
 /**
  * @author Muneeb Farooq
@@ -21,6 +21,7 @@ public class Appointment implements Comparable<Appointment>, Cloneable {
     // No Parameterized Constructor:
 
     Appointment() {
+
         appointment_id = "A001"; // APPOINTMENT ID DEFAULT VALUE
         patient_id = "P001"; // PATIENT ID DEFAULT VALUE
         doctor_id = "D001"; // DOCTOR ID DEFAULT VALUE

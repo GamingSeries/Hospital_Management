@@ -1,5 +1,3 @@
-package A1_Muneeb;
-
 /**
  * @author Muneeb Farooq
  * @version openJDL 17.0.3

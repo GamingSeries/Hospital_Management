@@ -13,7 +13,7 @@ public class Patient_Queue
     PriorityQueue<Patient> patient_list2 = new PriorityQueue<Patient>();
 
     /**
-     * @param p
+     * @param p Joins patient_list1 to the queue
      */
     public void joinQueue1(Patient p)
     {
@@ -21,14 +21,13 @@ public class Patient_Queue
     }
 
     /**
-     * @param p is writing this much enough?
+     * @param p Joins patient_list2 to the queue
      */
     public void joinQueue2(Patient p)
     {
         patient_list2.add(p);
     }
-
-
+    
     public void Consultation1()
     {
         System.out.println("Patient to Remove: " + patient_list1.peek());
