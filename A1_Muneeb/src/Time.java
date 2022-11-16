@@ -3,7 +3,6 @@
  * @version openJDL 17.0.3
  * @since openJDK 17.0.3
  */
-import java.util.Collection;
 
 public class Time implements Comparable<Time>, Cloneable {
     private int hour; // hours of the day(0-23)
