@@ -3,7 +3,7 @@ public class Date implements Comparable<Date>, Cloneable{
     private int month;
     private int year;
 
-    //Default Constructor
+    //Default ConstructorP
     Date()
     {
         day = 15;

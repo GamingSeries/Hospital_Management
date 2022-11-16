@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PatientTest002",
+            "request": "launch",
+            "mainClass": "PatientTest002",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch PatientTest001",
+            "request": "launch",
+            "mainClass": "PatientTest001",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
             "name": "Launch Test003",
             "request": "launch",
             "mainClass": "A1_Muneeb.Test003",

@@ -31,7 +31,11 @@ public class PatientTest001 {
         int size2=pat_queue.size1(); //PRINTING SIZE OF THE QUEUE
 		System.out.println("Size of the queue is: " + size2);
 
+        System.out.println("_______________________________");
+        System.out.println("Clearing Patient from the Queue");
         pat_queue.clear1();
-        System.out.println(pat_queue);
+        
+        int size3 = pat_queue.size1();
+        System.out.println("Size of the queue after clearing: " + size3);
     }
 }
