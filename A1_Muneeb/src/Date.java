@@ -109,7 +109,6 @@ public class Date implements Comparable<Date>, Cloneable {
      * 
      * @see java.lang.Comparable#compareTo(java.lang.Object)
      */
-    @Override
     public int compareTo(Date a) {
 
         if (this.getYear() == a.getYear()) {

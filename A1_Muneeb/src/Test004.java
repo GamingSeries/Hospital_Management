@@ -83,7 +83,7 @@ public class Test004 {
 					x.getMedication() + " " + x.getDate() + " " + x.getTime() + " " + x.getConsultR());
 		}
 
-		System.out.println("Array Sorted by date and time");
+		System.out.println("\n Array Sorted by date and time");
 		for (Appointment x2 : app_list2) {
 			System.out.println();
 			System.out.println(x2.getAppointment_id() + " " + x2.getPatient_id() + " " + x2.getDoctor_id() + " "
@@ -91,6 +91,6 @@ public class Test004 {
 					+ x2.getMedication() + " " + x2.getDate() + " " + x2.getTime() + " " + x2.getConsultR());
 			System.out.println();
 		}
-
+		
 	}
 }

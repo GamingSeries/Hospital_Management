@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test001",
+            "request": "launch",
+            "mainClass": "Test001",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test003",
+            "request": "launch",
+            "mainClass": "Test003",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test004",
+            "request": "launch",
+            "mainClass": "Test004",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
             "name": "Launch PatientTest002",
             "request": "launch",
             "mainClass": "PatientTest002",

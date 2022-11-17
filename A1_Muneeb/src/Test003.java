@@ -40,6 +40,8 @@ public class Test003 {
         arr_list.add(new Appointment("A107", "P120", "D125", "coughing", "cough syrup", date_2, time_2, room_2));
         arr_list.add(new Appointment("A109", "P111", "D135", "asthma", "inhaler", date_3, time_3, room_3));
 
+
+
         // System.out.println(appointment1);
 
         // more dummy data
@@ -87,8 +89,8 @@ public class Test003 {
         app_list2[2] = new Appointment("A001", "P009", "D152", "heart disease", "transplant", new_date3, new_time3,
                 new_room3);
 
-        Collections.sort(arr_list);
         Arrays.sort(app_list2);
+        Collections.sort(arr_list);
 
         System.out.println("_________________________________________________");
         System.out.println("Array sorted by Appointment ID");
