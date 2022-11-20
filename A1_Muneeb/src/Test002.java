@@ -1,6 +1,6 @@
 /**
  * @author Muneeb Farooq
- * @version openJDL 17.0.3
+ * @version openJDK 17.0.3
  * @since openJDK 17.0.3
  */
 public class Test002 {
@@ -22,6 +22,21 @@ public class Test002 {
         System.out.println(app_1);
         System.out.println("____________________________________________");
         System.out.println("Cloned Appointment");
+        System.out.println(app_2);
+
+        Date date_2 = new Date(1, 5,2020);
+        Time time_2 = new Time(12, 15);
+        Consultation_Room room_2 = new Consultation_Room('B', 2, 205);
+        app_1.setAppointment("A400", "P500", "D200", "Mental Illness", "Therapy", date_2, time_2, room_2);
+
+        System.out.println();
+        System.out.println("____________________________________________");
+        System.out.println("Changing Appointment 1");
+        System.out.println(app_1);
+
+        System.out.println();
+        System.out.println("____________________________________________");
+        System.out.println("Printing the cloned Appointment Again");
         System.out.println(app_2);
 
     }

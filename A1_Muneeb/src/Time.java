@@ -1,6 +1,6 @@
 /**
  * @author Muneeb Farooq
- * @version openJDL 17.0.3
+ * @version openJDK 17.0.3
  * @since openJDK 17.0.3
  */
 
@@ -16,8 +16,8 @@ public class Time implements Comparable<Time>, Cloneable {
 
     // Parameterized Constructor:
     /**
-     * @param hour
-     * @param minute
+     * @param hour passes "hour" insde the constructor
+     * @param minute passes "minute" insde the constructor
      */
     Time(int hour, int minute) {
         this.hour = hour;
@@ -26,7 +26,7 @@ public class Time implements Comparable<Time>, Cloneable {
 
     // Copy Constructor:
     /**
-     * @param c_Time
+     * @param c_Time copies Time attributes 
      */
     Time(Time c_Time) {
         hour = c_Time.hour;
@@ -35,8 +35,8 @@ public class Time implements Comparable<Time>, Cloneable {
 
     // Setter Method:
     /**
-     * @param hour
-     * @param minute
+     * @param hour sets the hour 
+     * @param minute sets the time 
      */
     public void setTime(int hour, int minute) {
         this.hour = hour;
@@ -45,14 +45,14 @@ public class Time implements Comparable<Time>, Cloneable {
 
     // Getter Method:
     /**
-     * @return
+     * @return hour 
      */
     public int getHour() {
         return hour;
     }
 
     /**
-     * @return
+     * @return minute
      */
     public int getMinute() {
         return minute;
@@ -101,7 +101,7 @@ public class Time implements Comparable<Time>, Cloneable {
     // Cloning Object
     // @Override
     /**
-     * @return
+     * @return super.clone()
      * @throws CloneNotSupportedException
      */
     public Object Clone() throws CloneNotSupportedException {

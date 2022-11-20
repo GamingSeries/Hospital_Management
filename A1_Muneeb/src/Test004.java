@@ -1,6 +1,6 @@
 /**
  * @author Muneeb Farooq
- * @version openJDL 17.0.3
+ * @version openJDK 17.0.3
  * @since openJDK 17.0.3
  */
 import java.util.ArrayList;

@@ -1,9 +1,9 @@
 /**
  * @author Muneeb Farooq
- * @version openJDL 17.0.3
+ * @version openJDK 17.0.3
  * @since openJDK 17.0.3
  */
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         System.out.println("_____________________________________________________________");

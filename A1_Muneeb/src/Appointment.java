@@ -1,6 +1,6 @@
 /**
  * @author Muneeb Farooq
- * @version openJDL 17.0.3
+ * @version openJDK 17.0.3
  * @since openJDK 17.0.3
  * 
  */
@@ -46,14 +46,14 @@ public class Appointment implements Comparable<Appointment>, Cloneable {
      */
     Appointment(String appointment_id, String patient_id, String doctor_id, String reason,
             String medication, Date date, Time time, Consultation_Room room) {
-        this.appointment_id = appointment_id; // PARAMETERIZED APPOINTMENT ID
-        this.patient_id = patient_id; // PARAMETERIZED PATIENT ID
-        this.doctor_id = doctor_id; // PARAMETERIZED DOCTOR ID
-        this.reason = reason; // PARAMETERIZED REASON
-        this.medication = medication; // PARAMETERIZED MEDICATION
-        this.date = date; // PARAMETERIZED DATE
-        this.time = time; // PARAMETERIZED TIME
-        this.room = room; // PARAMETERIZED ROOM
+        this.appointment_id = appointment_id; 
+        this.patient_id = patient_id;
+        this.doctor_id = doctor_id; 
+        this.reason = reason; 
+        this.medication = medication; 
+        this.date = date; 
+        this.time = time; 
+        this.room = room; 
 
     }
 

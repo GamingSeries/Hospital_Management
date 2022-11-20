@@ -1,6 +1,6 @@
 /**
  * @author Muneeb Farooq
- * @version openJDL 17.0.3
+ * @version openJDK 17.0.3
  * @since openJDK 17.0.3
  */
 import java.util.Collections;
@@ -86,8 +86,7 @@ public class Test003 {
         Appointment[] app_list2 = new Appointment[3];
         app_list2[0] = new Appointment("A004", "P007", "D150", "asthma", "Inhaler", new_date1, new_time1, new_room1);
         app_list2[1] = new Appointment("A009", "P008", "D151", "cough", "Brufen", new_date2, new_time2, new_room2);
-        app_list2[2] = new Appointment("A001", "P009", "D152", "heart disease", "transplant", new_date3, new_time3,
-                new_room3);
+        app_list2[2] = new Appointment("A001", "P009", "D152", "heart disease", "transplant", new_date3, new_time3, new_room3);
 
         Arrays.sort(app_list2);
         Collections.sort(arr_list);
@@ -99,7 +98,6 @@ public class Test003 {
                     x.getAppointment_id() + " " + x.getPatient_id() + " " + x.getDoctor_id() + " " + x.getReason() + " "
                             + x.getMedication() + " " + x.getDate() + " " + x.getTime() + " " + x.getConsultR());
         }
-        // chalo nice
 
         System.out.println("_________________________________________________");
         System.out.println("Array List Sorted by Appointment ID");
@@ -109,16 +107,5 @@ public class Test003 {
                     y.getAppointment_id() + " " + y.getPatient_id() + " " + y.getDoctor_id() + " " + y.getReason() + " "
                             + y.getMedication() + " " + y.getDate() + " " + y.getTime() + " " + y.getConsultR());
         }
-
-        /*
-         * test
-         * Appointment test_app = new Appointment();
-         * 
-         * Appointment test_app1;
-         * test_app1 = new Appointment("A1", "P1", "D1", "Res1", "Med1", new_date3,
-         * new_time3, new_room3);
-         * 
-         * test_app.getDate().compareTo(test_app1.getDate());
-         */
     }
 }
