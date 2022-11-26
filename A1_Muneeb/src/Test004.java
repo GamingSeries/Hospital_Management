@@ -1,3 +1,4 @@
+
 /**
  * @author Muneeb Farooq
  * @version openJDK 17.0.3
@@ -13,7 +14,6 @@ public class Test004 {
 	 */
 	public static void main(String[] args) {
 		ArrayList<Appointment> arr_list = new ArrayList<Appointment>();
-		Appointment appointment1 = new Appointment();
 
 		Date date3;
 		date3 = new Date(21, 8, 2022);
@@ -91,6 +91,6 @@ public class Test004 {
 					+ x2.getMedication() + " " + x2.getDate() + " " + x2.getTime() + " " + x2.getConsultR());
 			System.out.println();
 		}
-		
+
 	}
 }

@@ -13,7 +13,6 @@ public class Test003 {
      */
     public static void main(String[] args) {
         ArrayList<Appointment> arr_list = new ArrayList<Appointment>();
-        Appointment appointment1 = new Appointment();
 
         Date date_1;
         date_1 = new Date(16, 4, 2022);

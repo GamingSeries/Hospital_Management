@@ -5,7 +5,6 @@ import java.util.Queue;
 
 public class Patient_Queue
 {
-    private LinkedList <Patient> list_1 = new LinkedList<Patient>();
     Queue<Patient> patient_list1 = new LinkedList<Patient>();
     PriorityQueue<Patient> patient_list2 = new PriorityQueue<Patient>();
 
@@ -102,5 +101,5 @@ public class Patient_Queue
     {
         System.out.println(patient_list2.isEmpty());
     }
-
+    
 }
