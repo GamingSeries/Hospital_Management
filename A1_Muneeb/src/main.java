@@ -36,7 +36,6 @@ public class Main {
                 "Operation", date_2, time_2, room_2);
 
         System.out.println(set_app);
-
     }
 
 }

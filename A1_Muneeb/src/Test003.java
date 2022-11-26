@@ -88,6 +88,26 @@ public class Test003 {
         app_list2[1] = new Appointment("A009", "P008", "D151", "cough", "Brufen", new_date2, new_time2, new_room2);
         app_list2[2] = new Appointment("A001", "P009", "D152", "heart disease", "transplant", new_date3, new_time3, new_room3);
 
+        // Arrays.sort(app_list2);
+        // Collections.sort(arr_list);
+
+        System.out.println("_________________________________________________");
+        System.out.println("Array before sorting Appointment ID");
+        for (Appointment x : app_list2) {
+            System.out.println(
+                    x.getAppointment_id() + " " + x.getPatient_id() + " " + x.getDoctor_id() + " " + x.getReason() + " "
+                            + x.getMedication() + " " + x.getDate() + " " + x.getTime() + " " + x.getConsultR());
+        }
+
+        System.out.println("_________________________________________________");
+        System.out.println("Array List before sorting Appointment ID");
+
+        for (Appointment y : arr_list) {
+            System.out.println(
+                    y.getAppointment_id() + " " + y.getPatient_id() + " " + y.getDoctor_id() + " " + y.getReason() + " "
+                            + y.getMedication() + " " + y.getDate() + " " + y.getTime() + " " + y.getConsultR());
+        }
+
         Arrays.sort(app_list2);
         Collections.sort(arr_list);
 
@@ -107,5 +127,6 @@ public class Test003 {
                     y.getAppointment_id() + " " + y.getPatient_id() + " " + y.getDoctor_id() + " " + y.getReason() + " "
                             + y.getMedication() + " " + y.getDate() + " " + y.getTime() + " " + y.getConsultR());
         }
+
     }
 }

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch tree_map",
+            "request": "launch",
+            "mainClass": "ica_files.tree_map",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch hash_table",
+            "request": "launch",
+            "mainClass": "ica_files.hash_table",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "SWE_5202_617886e3"
+        },
+        {
+            "type": "java",
             "name": "Launch Test002",
             "request": "launch",
             "mainClass": "Test002",
