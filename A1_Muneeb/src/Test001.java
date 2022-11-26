@@ -49,7 +49,20 @@ public class Test001 {
         Appointment set_app = new Appointment();
         set_app.setAppointment("A110", "P241", "D410", "Cancer",
                 "Operation", date_2, time_2, room_2);
-
         System.out.println(set_app);
+
+        System.out.println("_____________________________________________________________");
+        System.out.println("\t\t Getter Method");
+        System.out.println("_____________________________________________________________");
+
+        System.out.println("Appointment ID: " + set_app.getAppointment_id());
+        System.out.println("Patient ID: " + set_app.getPatient_id());
+        System.out.println("Doctor ID: " + set_app.getDoctor_id());
+        System.out.println("Reason: " + set_app.getReason());
+        System.out.println("Medication: " + set_app.getMedication());
+        System.out.println("Date: " + set_app.getDate());
+        System.out.println("Time: " + set_app.getTime());
+        System.out.println("Room: " + set_app.getConsultR());
+
     }
 }
