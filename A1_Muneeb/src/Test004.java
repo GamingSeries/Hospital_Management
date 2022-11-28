@@ -72,6 +72,23 @@ public class Test004 {
 		app_list2[1] = new Appointment("A005", "P008", "D151", "cough", "Brufen", date5, time5, room5);
 		app_list2[2] = new Appointment("A006", "P009", "D152", "heart disease", "transplant", date6, time6, room6);
 
+		System.out.println();
+		System.out.println("Before Sorting ArrayList by date and time");
+		for (Appointment x : arr_list) {
+			System.out.println(x.getAppointment_id() + " " + x.getPatient_id() + " " + x.getDoctor_id() + " "
+					+ x.getReason() + " " +
+					x.getMedication() + " " + x.getDate() + " " + x.getTime() + " " + x.getConsultR());
+		}
+
+		System.out.println("\n Before Sorting Array by date and time");
+		for (Appointment x2 : app_list2) {
+			System.out.println();
+			System.out.println(x2.getAppointment_id() + " " + x2.getPatient_id() + " " + x2.getDoctor_id() + " "
+					+ x2.getReason() + " "
+					+ x2.getMedication() + " " + x2.getDate() + " " + x2.getTime() + " " + x2.getConsultR());
+			System.out.println();
+		}
+
 		Collections.sort(arr_list, new SortByDateTime());
 		Arrays.sort(app_list2, new SortByDateTime());
 
