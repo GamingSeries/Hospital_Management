@@ -2,7 +2,6 @@
  * @author Muneeb Farooq
  * @version openJDK 17.0.3
  * @since openJDK 17.0.3
- * 
  */
 
 public class Appointment implements Comparable<Appointment>, Cloneable {
